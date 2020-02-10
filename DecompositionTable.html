@@ -1,0 +1,147 @@
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<table id="collapsibleTable">
+    <tr kod="01">
+        <td class="minus"></td>
+        <td>1</td>
+        <td>Eylem 1</td>
+        <td>Bar</td>
+    </tr>
+    <tr kod="02">
+        <td class="minus"></td>
+        <td>2</td>
+        <td>Eylem 2</td>
+        <td>Bar</td>
+    </tr>
+    <tr kod="02-01">
+        <td class="plus"></td>
+        <td>2.1</td>
+        <td>Alt Eylem 1</td>
+        <td>Bar</td>
+    </tr>
+    <tr kod="02-01-01">
+        <td class="plus"></td>
+        <td>2.1.1</td>
+        <td>Alt Eylem 1</td>
+        <td>Bar</td>
+    </tr>
+    <tr kod="02-01-01-01">
+        <td class="plus"></td>
+        <td>2.1.1.1</td>
+        <td>Alt Eylem 1</td>
+        <td>Bar</td>
+    </tr>
+    <tr kod="02-01-01-02">
+        <td class="plus"></td>
+        <td>2.1.1.2</td>
+        <td>Alt Eylem 2</td>
+        <td>Bar</td>
+    </tr>
+    <tr kod="02-01-02">
+        <td class="plus"></td>
+        <td>2.1.2</td>
+        <td>Alt Eylem 2</td>
+        <td>Bar</td>
+    </tr>
+    <tr kod="02-01-02-01">
+        <td class="plus"></td>
+        <td>2.1.2.1</td>
+        <td>Alt Eylem 1</td>
+        <td>Bar</td>
+    </tr>
+    <tr kod="02-01-02-02">
+        <td class="plus"></td>
+        <td>2.1.2.2</td>
+        <td>Alt Eylem 2</td>
+        <td>Bar</td>
+    </tr>
+    <tr kod="02-02">
+        <td class="plus"></td>
+        <td>2.2</td>
+        <td>Alt Eylem 2</td>
+        <td>Bar</td>
+    </tr>
+    <tr kod="02-02-01">
+        <td class="plus"></td>
+        <td>2.2.1</td>
+        <td>Alt Eylem 1</td>
+        <td>Bar</td>
+    </tr>
+    <tr kod="02-02-02">
+        <td class="plus"></td>
+        <td>2.2.2</td>
+        <td>Alt Eylem 2</td>
+        <td>Bar</td>
+    </tr>
+    <tr kod="03">
+        <td class="minus"></td>
+        <td>3</td>
+        <td>Eylem 3</td>
+        <td>Bar</td>
+    </tr>
+    <tr kod="03-01">
+        <td class="plus"></td>
+        <td>3.1</td>
+        <td>Alt Eylem 1</td>
+        <td>Bar</td>
+    </tr>
+    <tr kod="03-02">
+        <td class="plus"></td>
+        <td>3.2</td>
+        <td>Alt Eylem 2</td>
+        <td>Bar</td>
+    </tr>
+</table>
+
+<style>
+    #collapsibleTable {
+        border: 1px solid;
+    }
+
+    #collapsibleTable td {
+        border: 1px solid;
+    }
+
+    #collapsibleTable .l1 {}
+
+    #collapsibleTable .plus::before {
+        content: "+";
+    }
+
+    #collapsibleTable .minus::before {
+        content: "-";
+    }
+</style>
+
+<script>
+    $(() => {
+        //$('#collapsibleTable .plus').on("click", (a) => {
+        $(document).on("click", "#collapsibleTable .minus", (a) => {
+            var _this = $(a.target);
+            _this.removeClass("minus").addClass("plus");
+            var tr = _this.closest("tr");
+            var trkod = tr.attr("kod");
+
+            hideLevel(trkod)
+        });
+        $(document).on("click", "#collapsibleTable .plus", (a) => {
+            //$('#collapsibleTable .minus').on("click", (a) => {
+            var _this = $(a.target);
+            _this.removeClass("plus").addClass("minus");
+            var tr = _this.closest("tr");
+            var trkod = tr.attr("kod");
+
+            showLevel(trkod).show();
+        })
+    })
+
+    function showLevel(kod = "") {
+        var currentLevel = kod.split("-").length;
+        return $('#collapsibleTable tr[kod*=' + kod + '-]').filter(function (i, el) {
+            return el.attributes.kod.value.split("-").length == (currentLevel + 1);
+        });
+    }
+    function hideLevel(kod = "") {
+        $('#collapsibleTable tr[kod^=' + kod + '-]').hide();
+        $('#collapsibleTable tr[kod^=' + kod + '-] .minus').removeClass("minus").addClass("plus");
+    }
+</script>
