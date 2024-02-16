@@ -1,0 +1,22 @@
+C:\Users\metin.sevindik\source\repos\ADSearch\ADSearch\bin\Debug\ADSearch.exe.config
+C:\Users\metin.sevindik\source\repos\ADSearch\ADSearch\bin\Debug\ADSearch.exe
+C:\Users\metin.sevindik\source\repos\ADSearch\ADSearch\bin\Debug\ADSearch.pdb
+C:\Users\metin.sevindik\source\repos\ADSearch\ADSearch\bin\Debug\Microsoft.IdentityModel.Clients.ActiveDirectory.dll
+C:\Users\metin.sevindik\source\repos\ADSearch\ADSearch\obj\Debug\ADSearch.csproj.AssemblyReference.cache
+C:\Users\metin.sevindik\source\repos\ADSearch\ADSearch\obj\Debug\ADSearch.Form1.resources
+C:\Users\metin.sevindik\source\repos\ADSearch\ADSearch\obj\Debug\ADSearch.csproj.GenerateResource.cache
+C:\Users\metin.sevindik\source\repos\ADSearch\ADSearch\obj\Debug\ADSearch.csproj.CoreCompileInputs.cache
+C:\Users\metin.sevindik\source\repos\ADSearch\ADSearch\obj\Debug\ADSearch.csproj.CopyComplete
+C:\Users\metin.sevindik\source\repos\ADSearch\ADSearch\obj\Debug\ADSearch.exe
+C:\Users\metin.sevindik\source\repos\ADSearch\ADSearch\obj\Debug\ADSearch.pdb
+E:\İçişleri Yedek\Visual Studio Projects\ADSearch\ADSearch\bin\Debug\ADSearch.exe.config
+E:\İçişleri Yedek\Visual Studio Projects\ADSearch\ADSearch\bin\Debug\ADSearch.exe
+E:\İçişleri Yedek\Visual Studio Projects\ADSearch\ADSearch\bin\Debug\ADSearch.pdb
+E:\İçişleri Yedek\Visual Studio Projects\ADSearch\ADSearch\bin\Debug\Microsoft.IdentityModel.Clients.ActiveDirectory.dll
+E:\İçişleri Yedek\Visual Studio Projects\ADSearch\ADSearch\obj\Debug\ADSearch.csproj.AssemblyReference.cache
+E:\İçişleri Yedek\Visual Studio Projects\ADSearch\ADSearch\obj\Debug\ADSearch.Form1.resources
+E:\İçişleri Yedek\Visual Studio Projects\ADSearch\ADSearch\obj\Debug\ADSearch.csproj.GenerateResource.cache
+E:\İçişleri Yedek\Visual Studio Projects\ADSearch\ADSearch\obj\Debug\ADSearch.csproj.CoreCompileInputs.cache
+E:\İçişleri Yedek\Visual Studio Projects\ADSearch\ADSearch\obj\Debug\ADSearch.csproj.CopyComplete
+E:\İçişleri Yedek\Visual Studio Projects\ADSearch\ADSearch\obj\Debug\ADSearch.exe
+E:\İçişleri Yedek\Visual Studio Projects\ADSearch\ADSearch\obj\Debug\ADSearch.pdb
